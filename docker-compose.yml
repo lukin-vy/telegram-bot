@@ -1,0 +1,10 @@
+services:
+  server:
+    build:
+      context: ./
+    network_mode: "host"
+    environment:
+      - TELEGRAM_TOKEN=
+    volumes:
+      # для логов
+      - ./log:/log
